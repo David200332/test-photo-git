@@ -1,0 +1,13 @@
+.photolist {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.close_button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}

@@ -1,0 +1,13 @@
+.header {
+  font-weight: 400;
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.App {
+  margin: 0 auto;
+  width: 1100px;
+  text-align: center;
+}

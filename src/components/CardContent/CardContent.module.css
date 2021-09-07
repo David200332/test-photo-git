@@ -1,0 +1,45 @@
+.content {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.content__left {
+    width: 50%;
+    min-width: 340px;
+}
+
+.content__right {
+    width: 50%;
+    margin-left: 30px;
+    word-break: break-all;
+    min-width: 50%;
+}
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #999999;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
