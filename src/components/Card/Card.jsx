@@ -9,7 +9,7 @@ const Card = ({selectPhoto}) => {
 
     const [photo, setPhoto] = useState([])
     const [IsFetching, setIsFetching] = useState(true)
- 
+    
     useEffect(() => {
         getSinglePhoto(setPhoto, setIsFetching, selectPhoto)
     }, [selectPhoto])

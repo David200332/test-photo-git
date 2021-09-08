@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Form from '../Form/Form'
 import style from './CardContent.module.css'
 
+import {postFunc} from '../../helpers/index'
+
 const CardContent = ({item}) => {
 
     const [inputValue, setInputValue] = useState({
@@ -15,13 +17,15 @@ const CardContent = ({item}) => {
         event.preventDefault();
         setComments([...comments, {
             date: new Date(),
-            id: 2,
+            id: new Date(),
             text: inputValue.value
         }])
+        postFunc(item.data.id, inputValue)
         setInputValue({
             name: "",
             value: ""
         })
+        
     }
 
     const convertDate = (timestamp) => {
